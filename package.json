@@ -1,0 +1,52 @@
+{
+  "name": "parallel-fetch",
+  "version": "0.0.1",
+  "description": "Fetch with limiting the number of concurrent tasks",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "xo",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "test": "npm run lint && nsp check && ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuu/parallel-fetch.git"
+  },
+  "keywords": [
+    "fetch"
+  ],
+  "author": "Kuu Miyazaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuu/parallel-fetch/issues"
+  },
+  "homepage": "https://github.com/kuu/parallel-fetch#readme",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "coveralls": "^2.13.0",
+    "nsp": "^2.6.3",
+    "nyc": "^10.2.0",
+    "proxyquire": "^1.7.11",
+    "xo": "^0.18.1"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "capitalized-comments": 0,
+      "dot-notation": 0,
+      "new-cap": 0,
+      "no-cond-assign": 0,
+      "no-multi-assign": 0,
+      "import/no-dynamic-require": 0
+    }
+  },
+  "dependencies": {
+    "debug": "^2.6.3",
+    "node-fetch": "^1.6.3",
+    "through2-parallel": "^0.1.3"
+  }
+}
