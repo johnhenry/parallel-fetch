@@ -32,6 +32,9 @@
     "proxyquire": "^1.7.11",
     "xo": "^0.18.1"
   },
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "xo": {
     "esnext": true,
     "space": true,
