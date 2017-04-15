@@ -8,7 +8,7 @@
 Fetch with limiting the number of concurrent tasks
 
 ## Usage
-```
+```js
 const Loader = require('parallel-fetch');
 
 const loader = new Loader({concurrency: 5});

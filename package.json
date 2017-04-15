@@ -1,5 +1,5 @@
 {
-  "name": "parallel-fetch",
+  "name": "@kuu/parallel-fetch",
   "version": "0.0.1",
   "description": "Fetch with limiting the number of concurrent tasks",
   "main": "index.js",
